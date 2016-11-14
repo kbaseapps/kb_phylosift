@@ -1,0 +1,60 @@
+#
+# define display information
+#
+name: Get Taxonomic Profiles with PhyloSift
+
+tooltip: |
+    PhyloSift
+
+screenshots: []
+
+icon: icon.png
+
+#
+# define a set of similar methods that might be useful to the user
+#
+suggestions:
+    apps:
+        related:
+            [app1, app2]
+        next:
+            [app3, app4]
+    methods:
+        related:
+            [method1, method2]
+        next:
+            [method3, method4]
+
+
+#
+# Configure the display and description of parameters
+#
+parameters :
+    input_reads_ref :
+        ui-name : |
+            Input Reads
+        short-hint : |
+            Either a Reads Library or set of Reads Libraries (Reads Set)
+        long-hint : |
+            The Reads for which you want a taxonomic profile
+    output_tax_profile_name :
+        ui-name : |
+            Output tax profile
+        short-hint : |
+            Taxonomic profile object
+        long-hint : |
+            The name for the output taxonomic profile
+
+description : |
+    <p>This is the KBase wrapper for PHYLOSIFT.</p>
+    <p>PhyloSift is a suite of software tools to conduct phylogenetic analysis of genomes and metagenomes.<br>Using a reference database of protein sequences, PhyloSift can scan new sequences against that database for homologs and identify the phylogenetic relationship of the new sequence to the database sequences. During this procedure, high quality alignments of codon and amino acid sequence are generated.<br><br>Software Download on GitHub: https://github.com/gjospin/PhyloSift<br><br>Website : https://phylosift.wordpress.com/<br><br>Twitter : @PhyloSift<br><br>Google Group for user support: https://groups.google.com/d/forum/phylosift<br><br>PhyloSift is copyright (C) 2011 Aaron Darling and Guillaume Jospin<br><br>This program is free software; you can redistribute it and/or modify it under the terms of either: the GNU General Public License as published by the Free Software Foundation.</p>
+
+
+publications :
+    -
+        pmid: 24482762
+        display-text : |
+            'Darling AE, Jospin G, Lowe E, Matsen FA IV, Bik HM et al. (2014) PhyloSift: phylogenetic analysis of genomes and metagenomes. PeerJ 2:e243 http://dx.doi.org/10.7717/peerj.243'
+        link: https://www.ncbi.nlm.nih.gov/pubmed/24482762
+    -
+        link: https://phylosift.wordpress.com/
